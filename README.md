@@ -1,52 +1,45 @@
 # GAME_PROGRAM-EX--1
-sathishv
-212225040391
-```
-#Aim
-
+EXP:1 Implementing various effects in a material such as emissive, roughness and metallic properties in Unreal Engine.
+## Aim
 To implement and demonstrate various material effects in Unreal Engine, including emissive, roughness, and metallic properties, using the Material Editor.
-#Procedure
-1.Create a New Material:
+
+## Procedure
+Create a New Material:
 
 Open Unreal Engine.
 In the Content Browser, right-click and select Material.
 Name it M_EffectsDemo.
-
-2.Apply Base Color:
+Apply Base Color:
 
 Open the material.
 Add a Vector Parameter or Constant3Vector node and connect it to the Base Color input.
 Add Emissive Effect:
 
-3.Add a Multiply node.
+Add a Multiply node.
 Connect a Constant3Vector (for emissive color) and a Scalar Parameter (for intensity).
 Connect the result to the Emissive Color input.
-
-4.Control Roughness:
+Control Roughness:
 
 Add a Scalar Parameter node and connect it to the Roughness input.
 Lower values = shinier surface, higher values = rougher surface.
-
-5.Control Metallic Property:
+Control Metallic Property:
 
 Add a Scalar Parameter node and connect it to the Metallic input.
 0 = non-metal, 1 = fully metallic.
-6.Save and Apply Material:
+Save and Apply Material:
 
 Save the material.
 Apply it to any mesh in the scene (like a sphere or cube) to preview the results.
-```
-#output:
-<img width="1536" height="1024" alt="513751527-c4756af5-a1c2-40a8-a90e-7937f2936df4" src="https://github.com/user-attachments/assets/c8a092ad-501f-489e-977c-86693b3b9992" />
 
-<img width="1192" height="791" alt="441625267-3aaea163-8335-42c9-af3c-46adac71cb00" src="https://github.com/user-attachments/assets/787732e0-b5d9-4c68-8d49-bea7bc5857e2" />
-```
-#Result
+## Output
+<img width="1381" height="952" alt="image" src="https://github.com/user-attachments/assets/e695124b-2548-4762-9fea-94d73bb98b30" />
 
+<img width="1457" height="962" alt="image" src="https://github.com/user-attachments/assets/13d208f2-d908-4820-8f84-e15da37ab15c" />
+
+## Result
 Successfully implemented a material in Unreal Engine showcasing:
 
 Emissive glow using emissive color and intensity.
 Variable surface roughness to simulate different textures.
 Metallic appearance adjustment to reflect light like real-world metals.
 This setup enables dynamic, realistic materials suitable for use in environments, characters, and VFX in Unreal Engine projects.
-```
